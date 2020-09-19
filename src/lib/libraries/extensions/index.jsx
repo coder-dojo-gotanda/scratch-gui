@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -45,6 +45,9 @@ import gdxforIconURL from './gdxfor/gdxfor.png';
 import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
+
+import hashImage from './hash/hashImage.png';
+import hashButtonImage from './hash/hashButtonImage.png';
 
 export default [
     {
@@ -317,5 +320,24 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'Hash',
+        extensionId: 'hash',
+        collaborator: 'ufoo68',
+        iconURL: hashImage,
+        insetIconURL: hashButtonImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Calcurate hash."
+                description="Calcurate hash"
+                id="gui.extension.hash.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: false,
+        bluetoothRequired: false,
+        helpLink: 'https://scratch.mit.edu/wedo'
     }
 ];
